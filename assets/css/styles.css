@@ -1,0 +1,54 @@
+/* Allgemeines Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #5a3711;
+    background-color: #fffaf5;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #f2c6c2;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #b45309;
+    text-decoration: none;
+}
+
+.paw-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b45309;
+}
+
+.nav-links a:hover {
+    color: #f97316;
+}
+
