@@ -69,28 +69,42 @@
         <!-- Kontaktformular -->
         <section class="kontakt">
             <h2>Kontaktiere mich</h2>
-            <form action="#" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            <div class="bento-container">
+                <section class="bento-box kontakt-info">
+                    <div class="kontakt-details">
+                        <h2>Kontaktinformationen</h2>
+                        <div class="address">
+                            <h3>Hundeliebe Bayern</h3>
+                            <p>Hundetrainerin</p>
+                            <p>staatl. gepr. nach §11 TierSchG</p>
+                            <p>Franka Heyder</p>
+                            <p>Mobil: 0151 147 82 571</p>
+                            <p>E-Mail: franka.heyder@hundeliebe.bayern</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="bento-box kontakt-direkt">
+                    <div class="contact-action">
+                        <h2>Direkt kontaktieren</h2>
+                        <p>Klicken Sie hier, um mir direkt eine E-Mail zu schreiben:</p>
+                        <a href="mailto:franka.heyder@hundeliebe.bayern?subject=Anfrage%20Hundetraining&body=Hallo%20Franka%2C%0D%0A%0D%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihr%20Hundetraining%20und%20h%C3%A4tte%20gerne%20weitere%20Informationen." class="btn primary contact-btn">
+                            <img src="assets/images/pawicons.svg" alt="Pfoten-Icon" class="btn-icon">
+                            E-Mail schreiben
+                        </a>
+                    </div>
+                </section>
 
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required>
 
-                <label for="message">Nachricht</label>
-                <textarea id="message" name="message" placeholder="Ihre Nachricht an mich :)" required></textarea>
-
-                <button type="submit" class="btn primary">
-                    Nachricht senden
-                </button>
-            </form>
+            </div>
         </section>
 
         <!-- Footer -->
         <footer>
             <p>© 2024 Hundeliebe Bayern. Alle Rechte vorbehalten.</p>
             <nav>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy</a>
+                <a href="pages/agb.html">AGB</a>
+                <a href="pages/datenschutz.html">Datenschutz</a>
             </nav>
         </footer>
     </body>
