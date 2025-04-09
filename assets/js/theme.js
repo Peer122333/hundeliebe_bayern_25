@@ -5,13 +5,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeOptionsList = document.querySelectorAll('.theme-option');
 
     // Theme aus dem Local Storage laden
-    const savedTheme = localStorage.getItem('theme') || 'default';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateActiveTheme(savedTheme);
+    themeToggle.classList.toggle('active', savedTheme === 'dark');
 
     // Theme Toggle Click Handler
     themeToggle.addEventListener('click', () => {
-        themeOptions.classList.toggle('active');
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        themeToggle.classList.toggle('active');
+        
+        // Animation für die Pfoten
+        const paws = themeToggle.querySelectorAll('.theme-icon');
+        paws.forEach(paw => {
+            paw.style.animation = 'none';
+            paw.offsetHeight; // Trigger reflow
+            paw.style.animation = null;
+        });
     });
 
     // Theme Option Click Handler
@@ -22,13 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('theme', theme);
             updateActiveTheme(theme);
             themeOptions.classList.remove('active');
+            themeToggle.classList.remove('active');
         });
     });
 
-    // Click außerhalb des Theme-Switchers schließt das Menü
+    // Click außerhalb schließt das Menü
     document.addEventListener('click', (e) => {
         if (!themeSwitcher.contains(e.target)) {
             themeOptions.classList.remove('active');
+            themeToggle.classList.remove('active');
         }
     });
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="default">
+<html lang="de" data-theme="light">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,39 +10,27 @@
         <script src="assets/js/theme.js" defer></script>
     </head>
     <body>
-        <div class="theme-switcher">
-            <button class="theme-toggle">
-                <img src="assets/images/theme-icon.svg" alt="Theme ändern" class="theme-icon">
-                <span>Theme</span>
-            </button>
-            <div class="theme-options">
-                <div class="theme-option active" data-theme="default">
-                    <div class="theme-preview" style="background: linear-gradient(45deg, #e75a87, #a9e0e9);"></div>
-                    <span>Standard</span>
-                </div>
-                <div class="theme-option" data-theme="dark">
-                    <div class="theme-preview" style="background: linear-gradient(45deg, #ff6b9c, #2c3e50);"></div>
-                    <span>Dunkel</span>
-                </div>
-                <div class="theme-option" data-theme="nature">
-                    <div class="theme-preview" style="background: linear-gradient(45deg, #4CAF50, #8BC34A);"></div>
-                    <span>Natur</span>
-                </div>
-            </div>
-        </div>
         <header class="navbar">
             <a href="index.html" class="logo">
                 <img src="assets/images/pawicons.svg" alt="Pfoten-Icon" class="paw-icon">
                 <span>Hundeliebe Bayern</span>
             </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/uebermich.html">Über mich</a></li>
-                    <li><a href="pages/angebot.html">Angebot</a></li>
-                    <li><a href="pages/kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/uebermich.html">Über mich</a></li>
+                        <li><a href="pages/angebot.html">Angebot</a></li>
+                        <li><a href="pages/kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-switcher">
+                    <button class="theme-toggle" aria-label="Theme wechseln">
+                        <span class="theme-icon theme-icon-light">🐾</span>
+                        <span class="theme-icon theme-icon-dark">🐾</span>
+                    </button>
+                </div>
+            </div>
         </header>
         <!-- Hero Section -->
         <section class="hero">
