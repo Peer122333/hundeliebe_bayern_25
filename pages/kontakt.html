@@ -13,7 +13,10 @@
             <img src="../assets/images/pawicons.svg" alt="Pfoten-Icon" class="paw-icon">
             <span>Hundeliebe Bayern</span>
         </a>
-        <nav>
+        <button class="mobile-menu-btn">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav-menu">
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="uebermich.html">Über mich</a></li>
@@ -47,11 +50,16 @@
             <section class="bento-box kontakt-direkt">
                 <div class="contact-action">
                     <h2>Direkt kontaktieren</h2>
-                    <p>Klicken Sie hier, um mir direkt eine E-Mail zu schreiben:</p>
-                    <a href="mailto:franka.heyder@hundeliebe.bayern?subject=Anfrage%20Hundetraining&body=Hallo%20Franka%2C%0D%0A%0D%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihr%20Hundetraining%20und%20h%C3%A4tte%20gerne%20weitere%20Informationen." class="btn primary contact-btn">
-                        <img src="../assets/images/pawicons.svg" alt="Pfoten-Icon" class="btn-icon">
-                        E-Mail schreiben
-                    </a>
+                    <p>Klicken Sie hier, um direkt Kontakt aufzunehmen:</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:franka.heyder@hundeliebe.bayern?subject=Anfrage%20Hundetraining&body=Hallo%20Franka%2C%0D%0A%0D%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihr%20Hundetraining%20und%20h%C3%A4tte%20gerne%20weitere%20Informationen." class="contact-btn">
+                            <img src="../assets/images/pawicons.svg" alt="Pfoten-Icon" class="btn-icon">
+                            E-Mail schreiben
+                        </a>
+                        <a href="tel:+4915114782571" class="contact-btn call">
+                            📞 Jetzt anrufen
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -69,9 +77,10 @@
     <footer>
         <p>© 2024 Hundeliebe Bayern. Alle Rechte vorbehalten.</p>
         <nav>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy</a>
+            <a href="agb.html">AGB</a>
+            <a href="datenschutz.html">Datenschutz</a>
         </nav>
     </footer>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
